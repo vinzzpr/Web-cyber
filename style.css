@@ -1,0 +1,23 @@
+:root{
+  --bg:#0b0f12;
+  --panel:#071018;
+  --accent:#39ff14;
+  --muted:#6b6f75;
+  --card:#0f1720;
+}
+*{box-sizing:border-box}
+body{background:linear-gradient(180deg,#050608 0%, #081018 100%);color:#cfeee8;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;margin:0;padding:20px}
+.container{max-width:1100px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+h1{font-size:18px;margin:0;color:var(--accent)}
+.token input{background:#081219;border:1px solid #123; color:#cfeee8;padding:6px 8px;border-radius:6px}
+.upload{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.btn{background:linear-gradient(90deg,#0b1b1b,#072026);border:1px solid #123;padding:8px 12px;border-radius:8px;color:#cfeee8;cursor:pointer;position:relative;overflow:hidden}
+.btn input[type=file]{position:absolute;left:0;top:0;opacity:0;width:100%;height:100%;cursor:pointer}
+.btn.small{padding:6px 10px;font-size:13px}
+.files{margin-bottom:16px}
+.file-card{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;margin-bottom:8px;border:1px solid rgba(255,255,255,0.02)}
+.file-info{font-size:13px}
+.file-actions button{margin-left:8px;padding:6px 8px;border-radius:6px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfeee8;cursor:pointer}
+.terminal{background:#000;border-radius:8px;padding:12px;min-height:240px;overflow:auto;border:1px solid #123;font-size:13px;white-space:pre-wrap}
+.smallmuted{color:var(--muted);font-size:12px}

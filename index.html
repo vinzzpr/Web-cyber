@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Script Panel - Terminal Style</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Script Panel • Terminal</h1>
+      <div class="token">
+        <input id="token" placeholder="ADMIN TOKEN (required to run/delete)" />
+      </div>
+    </header>
+
+    <section class="upload">
+      <label class="btn">
+        + Upload file (max 500MB)
+        <input id="fileInput" type="file" />
+      </label>
+      <button id="refreshBtn" class="btn small">Refresh list</button>
+    </section>
+
+    <section class="files">
+      <h2>Uploaded Files</h2>
+      <div id="filesList">Loading files...</div>
+    </section>
+
+    <section class="console">
+      <h2>Console</h2>
+      <div id="consoleOutput" class="terminal">No runs yet.</div>
+    </section>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
